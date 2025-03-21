@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <title>Graf Hamiltonian Pag2 </title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <h4>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="logo"><a href="index.html">Game Stats Logo</a></li>
+                    <li><a href="pag2.html">pag2</a></li>
+                </h4>
+            </ul>
+        </nav>
+
+    </header>
+
+
+
+
+
+
+
+    <section>
+
+        <li>
+            <h1 class="prima">Grafuri Hamiltoniene</h1>
+        </li>
+
+        <ul>
+            <p>
+                Grafurile au numeroase aplicații în diverse domenii: proiectarea circuitelor electrice, determinarea
+                celui mai scurt drum dintre două localități, rețelele sociale (ex. Facebook), etc.
+            </p>
+            <p>
+                <b>Problema comisului voiajorului </b> este o problemă celebră de informatică: Un comis-voiajor trebuie
+                viziteze n orașe.<br>
+                Cunoscându-se șoselele existente între orașe, să se determine o modalitate (toate modalitățile) prin
+                care comis-voiajorul poate parcurge fiecare oraș o singură dată și se întoarce în orașul de plecare.
+                <br>
+                Dacă asociem problemei un graf neorientat, constatăm că trebuie să determinăm un (toate) ciclu elementar
+                care trece prin toate vârfurile grafului.
+            </p>
+            <p>
+                <strong>Definiție</strong>: Se numește <strong>graf hamiltonian</strong> un graf care conține un
+                <strong>ciclu eulerian</strong>. Se numește <strong>ciclu hamiltoniane</strong>
+                un ciclu elementar (adica nu se repeta varfurile) ,care conține toate vârfurile grafului.
+            </p>
+
+            <p>
+                <strong>Definitie:</strong> Într-un graf neorientat, se numește lanț hamiltonian un lanț elementar care
+                conține toate vârfurile grafului.
+            </p>
+
+            <p>
+                <i> Conditii de suficineta pentru ca un graf (neorientat) sa fie hamiltonian:</i>
+            <ul class="teoreme">
+                <li>
+                    Fie G=(X,U) un graf neorientat cu n vârfuri și un lanț hamiltonian v1,v2,⋯,vn. <br>Dacă
+                    <b>d(v1)+d(vn)≥n</b>, atunci graful este hamiltonian <br>,unde d(x) este gradul vârfului x din lant.
+                </li>
+                <li>
+                    Fie G=(X,U) un graf neorientat cu n vârfuri. Dacă pentru orice pereche de vârfuri neadiacente (adica
+                    nu au muchie intre ele) , distincte vi,vj <br>
+                    avem relația <b>d(vi)+d(vj)≥n</b>, atunci graful <ins>este hamiltonian</ins>.
+                </li>
+                <li>
+                    Fie G un graf neorientat. Dacă are n≥3 vârfuri şi gradul oricărui vârf verifică inegalitatea
+                    <b>d(x)≥n/2</b> atunci G <ins>este hamiltonian</ins>.
+                </li>
+                <li>
+                    Un graf complet cu <b>n>2</b> vârfuri conține <b>(n-1)!/2</b> cicluri hamiltoniene
+                </li>
+            </ul>
+            </p>
+
+            <p>
+                <ins>Exemplu:</ins> Graful următor este hamiltonian. Un ciclu hamiltonian este: [1,4,2,3,7,6,5,1]
+            </p>
+            <nav class="douagrafuri">
+                <figure>
+                    <img src="images/graf-hamilton-euler.png" alt="Graf Hamiltonian">
+                </figure>
+
+                <figure>
+                    <img src="images/Screenshot (99).jpg" alt="Graf Hamiltonian" class="poza2">
+                </figure>
+
+            </nav>
+
+            <p>
+                <ins>Exemplu:</ins> Grafurile următoare sunt tot hamiltoniene:
+            </p>
+
+            <nav class="douagrafuridemaijos">
+                <img src="images/download.png" alt="Graf Hamiltonian">
+                <img src="images/Screenshot (100).png" class="pozaneagra">
+            </nav>
+
+
+
+            <p>
+            <h3><ins>Cod pentru afisarea unui ciclu hamiltonian care exista :</ins> </h3> <br>
+            <h3>Se va afisa 1 urmat de nodurile care alcatuiesc ciclul sau 0 in caz contrar</h3>
+            </p>
+            <p>
+            <ul class="probcpp">
+                <li>
+                    Date de intrare:<br> 9 <br>
+                    1 2 <br>
+                    1 4 <br>
+                    2 3 <br>
+                    2 4 <br>
+                    2 5 <br>
+                    3 4 <br>
+                    3 8 <br>
+                    3 9 <br>
+                    4 6 <br>
+                    5 6 <br>
+                    5 7 <br>
+                    5 8 <br>
+                    7 8 <br>
+                    8 9 <br>
+                </li>
+                <li>
+                    Date de iesire : <br>1 <br>
+                    1 2 3 9 8 7 5 6 4 1
+                </li>
+                <li>
+                    <img src="images/Screenshot (101).png" alt="codhamilton">
+                </li>
+            </ul>
+            </p>
+
+
+            <p>
+                Drumurile și ciclurile hamiltoniene sunt numite după <mark>William Rowan Hamilton</mark>, care a
+                inventat icosianul,<br>
+                denumit astăzi și puzzle-ul lui Hamilton, care implică găsirea unui ciclu hamiltonian în graful
+                muchiilor unui dodecaedru.
+            </p>
+
+            <figure class="pozadoe">
+                <img src="images/Hamiltonian_path.svg.png" alt="Graf Hamiltonian" class="pozadoe1">
+                <figcaption>
+                    <h4>Dodecaedrul este un poliedru cu 12 fețe</h4>
+                </figcaption>
+            </figure>
+
+            <h1 class="adoua">Exemple:</h1>
+
+            <ul class="exemple">
+                <h3>
+                    <li>1.<a href="https://ro.wikipedia.org/wiki/Graf_complet">Un graf complet</a> cu mai mult de două
+                        noduri este hamiltonian</li>
+                    <li>2.Orice graf ciclu este hamiltonian</li>
+                    <li>3.Orice graf turneu are un număr impar de drumuri hamiltoniene (Rédei 1934)</li>
+                    <li>4.<a href="https://ro.wikipedia.org/wiki/Formula_lui_Cayley">Graful Cayley</a> al unui grup
+                        Coxeter finit este hamiltonian.</li>
+                    <li>5.<a href="https://ro.wikipedia.org/wiki/Graf_turneu">Un Graf turneu</a> (cu mai mult de două
+                        noduri) este hamiltonian dacă și numai dacă este tare conex.</li>
+                </h3>
+            </ul>
+            <h1 class="grafuriorientate">Grafuri Hamiltoniene orientate</h1>
+            <p>
+                Acestea sunt asemanatoare cu cele de la grafurile neorientate <br>
+                doar ca aici exista <b>arce</b> in loc de muchii si <b>circuit</b> in loc de ciclu...
+            </p>
+            <p>
+                <ins>Exemplu:<br></ins> Graful orientat desenat mai jos este hamiltonian,<br> deoarece con ține
+                circuitul hamiltonian
+            <h4 class="numere">(2, 1, 5 , 6, 4, 3, 2)</h4>
+            </p>
+            <nav class="graforientat">
+                <figure>
+                    <img src="images/ori.png" alt="Grafuri Hamiltoniene orientate">
+                </figure>
+            </nav>
+
+            <p>
+            <h1 class="dens1">Ciclu Hamiltonian in graf dens</h1>
+            </p>
+            (Categoria Algoritmi, Autor Leonard Crestez)
+            <p>
+                In acest articol are loc prezentarea unui algoritm pentru gasirea unui ciclu hamiltonian intr-un graf
+                neorientat dens - in care fiecare nod are macar (N + 1) / 2 muchii.<br>
+                <br>
+                In general, gasirea unui ciclu hamiltonian intr-un graf neorientat este un exemplu clasic de problema NP
+                - completa.<br>
+                Insa, daca graful este dens - fiecare nod are cel putin (N+1) / 2 muchii incidente (N este numarul de
+                noduri) - se poate gasi o solutie de complexitate O(N2).
+            </p>
+
+            <p>
+                La inceput formam un ciclu la intamplare, fara a tine cont daca muchiile luate in considerare chiar
+                exista in graf. Astfel, putem alege chiar ciclul 1, 2, 3, 4, ... N.<br>
+                Daca acest ciclu este valid, atunci avem noroc si solutia a fost gasita.<br>
+                <br>
+                Altfel, trebuie sa incercam sa "umplem gaurile" din ciclu (adica muchiile pe care le-am ales la
+                intamplare si care nu exista in graf).
+                Gasim prima muchie de acest fel, fie ea (A, B). Cautam apoi doua alte noduri adiacente in ciclul nostru,
+                notate cu C si D, astfel incat sa avem muchie de la A la C si de la B la D.<br>
+                <br>
+                Se poate demonstra ca vom gasi mereu C si D. Acum vom "incrucisa" A B cu C D. Prin "incrucisare" se
+                intelege transfromarea unui ciclu ...AB...CD... in ...AC...BD... (sau ...CD...AB... in ...CA...DB...)
+                .<br>
+                Atentie, secventa de la B la C (respectiv de la D la A) va fi inversata complet!<br>
+                <br>
+                Se observa ca a scazut numarul de "gauri" din sir, AB a fost eliminata si nu au fost adaugate "gauri"
+                noi. Repetam "umplerea gaurilor" pana nu mai avem ce umple, deci am gasit solutie.<br>
+                Desi suna complicat, "umplerea unei gauri" necesita doar O(N) timp pentru cautarea nodurilor AB, CD, si
+                incrucisare. Avand in vedere ca sunt maxim N gauri la inceput, algoritmul necesita O(N2) ca timp de
+                executie.
+            </p>
+
+            <figure class="pozadoe">
+                <img src="images/Screenshot (102).png" alt="Graf Dens" class="grafdens">
+            </figure>
+
+
+            <ul class="oresipoza">
+                <li>
+                    <h1>Teorema lui Ore - 1960</h1>
+                </li>
+                <li>
+                    <img src="images/mrore.jpg" alt="pozaore" class="pozaore">
+                </li>
+                <li><img src="images/ore.png" alt="pozaore2" class="pozaore2">
+
+                </li>
+            </ul>
+
+            <p>
+            <h4>Teorema lui Ore este un rezultat în teoria grafurilor demonstrată de matematicianul norvegian Øystein
+                Ore.<br>
+                Ea oferă o condiție suficientă pentru ca un graf să fie hamiltonian, afirmând în esență că un graf cu
+                suficiente muchii trebuie să conțină un ciclu Hamilton.<br>
+                Mai exact, teorema ia în considerare suma gradelor perechilor de vârfuri neadiacente:<br>
+                dacă fiecare astfel de pereche are o sumă care cel puțin este egală cu numărul total de vârfuri din
+                grafic, atunci graficul este hamiltonian.<br>
+            </h4>
+            </p>
+            <h2>
+                <p>Teorema:</p>
+            </h2>
+            <h2 class="teorema">
+                <p>Fie G un graf cu n ≥ 3 vârfuri. Pentru toate nodurile neadiacente u , v daca exista relatia
+                    grad(u)+grad(v) ≥ n , atunci graful G este hamiltonian </p>
+            </h2>
+            <h3>
+                <p>
+                    !! Reciproca acestei teoreme este falsa, deoarece fiind o conditie suficienta ,<br> nu obligatorie
+                    pentru un graf de a fii hamiltonian ,<br>
+                    exista grafuri hamiltoniene care nu satisfac teorema lui Ore.
+                </p>
+            </h3>
+            <p>
+                In exemplul urmator , graful este hamiltonian insa suma gradelor varfurilor neadiacente va fi egala cu
+                <b> 4 < 5 </b>
+            </p>
+            <figure class="pozadoe">
+                <img src="images/Screenshot (103).png" alt="Graf ham2" class="grafham2">
+            </figure>
+            <p>
+                Exemplul de mai jos confera adevar teoremei lui Ore , suma gradelor 1,4 = 4,1 este egala cu 6 ,<br>iar
+                suma gradelor 3,5 si 2,5 este egala cu 5
+            </p>
+            <figure class="pozadoe">
+                <img src="images/Screenshot (104).png" alt="Graf ham3" class="grafham3">
+            </figure>
+            <p>
+            <h1>Demonstratie:</h1>
+            </p>
+            <p>
+                <ins>Este echivalent să arătăm că fiecare graf non-Hamiltonian G nu respectă condiția lui Ore.</ins><br>
+                <br>
+                În consecință, să fie G un grafic pe n ≥ 3 vârfuri care nu este hamiltonian și să fie format H din G
+                adăugând muchii pe rând care nu creează un ciclu hamiltonian, până când nu mai pot fi adăugate
+                muchii.<br>
+                <br>
+                Fie x și y oricare două vârfuri neadiacente în H.<br>
+                <br>
+                Apoi adăugarea muchiei xy la H ar crea cel puțin un nou ciclu hamiltonian, iar muchiile altele decât xy
+                într-un astfel de ciclu trebuie să formeze o cale hamiltoniană <b>v1v2...vn </b>în H cu x = v1 și y =
+                vn.<br>
+                Pentru fiecare indice i din intervalul 2 ≤ i ≤ n, luăm în considerare cele două muchii posibile din H de
+                la v1 la vi și de la v(i-1) la vn.<br>
+                <br>
+                Cel mult una dintre aceste două muchii poate fi prezentă în H, pentru că altfel ciclul <b>
+                    v1v2...v(i-1)vnvn(i-1)...vi</b> ar fi un ciclu hamiltonian.<br>
+                Astfel, numărul total de muchii incidente fie la v1, fie la vn este cel mult egal cu numărul de opțiuni
+                ale lui i, care este n - 1.<br>
+                Prin urmare, H nu se supune proprietății lui Ore, care necesită ca acest număr total de muchii (grad v1
+                + grad vn) să fie mai mare sau egal cu n.
+                Deoarece gradele de vârf din G sunt cel mult egale cu gradele din H, rezultă că nici G nu respectă
+                proprietatea Ore.<br>
+            </p>
+            <figure class="pozalunga">
+                <img src="images/300px-Ore_theorem_proof.svg.png" alt="pazalunga" class="pozadem">
+            </figure>
+            <p>
+            <h1>Date importante...</h1>
+            </p>
+            <p>
+            <h3>Teorema lui Ore este o generalizare a teoremei lui Dirac care sustine că atunci când fiecare vârf are
+                gradul cel puțin n/2, graficul este hamiltonian.<br>
+                Atunci, dacă un grafic îndeplinește condiția lui Dirac, atunci în mod clar fiecare pereche de vârfuri
+                are grade adăugând cel puțin n.</h3>
+            </p>
+            <p class="dateimp">
+            <h3>
+                La rândul său, teorema lui Ore este generalizată de teorema Bondy-Chvátal.<br>
+                <br>
+                Se poate defini o operație de închidere pe un graf în care, ori de câte ori două vârfuri neadiacente au
+                grade care se adună la cel puțin n,<br>
+                se adaugă o muchie care le conectează;<br>
+                dacă un grafic îndeplinește condițiile teoremei lui Ore, închiderea sa este un grafic complet.<br>
+            </h3>
+            </p>
+            <figure>
+                <img src="images/220px-Hamiltonian.png" alt="pazabondy" class="pozabondy">
+            </figure>
+            <h1 class="butonsf"><a href="index.html">Home</a></h1>
+        </ul>
+
+    </section>
+    
+    <footer>
+        <p class="ultima">All the rights are reserved to Virag Raul 2023-2024</p>
+    </footer>
+
+</body>
+
+</html>

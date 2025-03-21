@@ -1,0 +1,204 @@
+/*Body*/
+
+body {
+    background: rgb(251, 251, 251);
+    color: rgb(4, 4, 4);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*Partea de sus unde se afla linkurile si logo*/
+
+header {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    height: 100px;
+    text-align: center;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+
+
+}
+
+/*///////////////////////////////////////////////////////////////////////////////*/
+
+/*Linkuri*/
+header a {
+    color: rgb(149, 23, 207);
+    margin-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 80px;
+    padding: -1px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10%;
+
+
+}
+
+a:hover {
+    text-decoration: underline;
+    background: rgb(13, 229, 99);
+}
+
+header .mobile {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 25px;
+    margin-top: 39px;
+    margin-bottom: -25px;
+    margin: 0;
+    padding: 0;
+}
+
+/*Logo formatat*/
+header .logo a {
+    background-image: url("images/Logo3.jpg");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 100px;
+    position: relative;
+    text-indent: -99999999px;
+    top: -37px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////*/
+.scris_sus {
+    background: rgb(229, 226, 226);
+    margin: auto;
+    padding: 24px;
+    color: rgb(13, 113, 184);
+
+
+}
+
+.elev {
+    text-align: end;
+    margin-bottom: 10px;
+}
+
+.Profesor {
+    text-align: end;
+    margin-bottom: 10px;
+}
+
+.atestat {
+    text-align: center;
+}
+
+.scoala {
+    text-align: center;
+}
+
+.an {
+    text-align: center;
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////////*/
+/*Sectiune*/
+section {
+    background: rgb(192, 20, 54);
+    color: rgb(182, 60, 39);
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    text-decoration: none;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/*Cele 2 imagini*/
+.features {
+    height: 400px;
+    padding: 20px;
+    display: flex;
+    color: rgb(246, 246, 246);
+    flex-direction: row;
+    background: rgb(7, 109, 77);
+    text-align: center;
+
+}
+
+.features figure {
+    margin: auto;
+    width: 300px;
+    text-align: center;
+    text-transform: uppercase;
+
+
+}
+
+
+.features figure img {
+    border: 1px solid white;
+    box-shadow: rgb(4, 4, 4) 5px 5px 10px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////*/
+.sectiune_cel_mai_jos {
+    background: rgb(241, 236, 236);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px;
+    color: rgb(14, 13, 13);
+}
+
+div li {
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.info_despre_site {
+    margin-top: 50px;
+    color: rgb(14, 13, 13);
+}
+
+.linkudejos {
+    color: rgb(0, 101, 253);
+}
+
+/*//////////////////////////////////////////////////////////////////////////////*/
+/*Partea cea mai de jos*/
+footer {
+    background: rgb(21, 163, 182);
+    padding: 5px 20px;
+    text-align: center;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+
+footer a {
+    color: rgb(18, 17, 17);
+    text-transform: uppercase;
+
+}
+
+.pozacner {
+    margin-left: 1555px;
+    margin-bottom: -150px;
+}
+
+.htmll {
+    color: blue;
+}

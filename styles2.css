@@ -1,0 +1,251 @@
+/*Body*/
+
+body {
+    background: rgb(251, 251, 251);
+    color: rgb(4, 4, 4);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*Partea de sus unde se afla linkurile si logo*/
+
+header {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    height: 100px;
+    text-align: center;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////*/
+
+/*Linkuri*/
+header a {
+    color: rgb(149, 23, 207);
+    margin-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 80px;
+    padding: -1px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10%;
+
+
+}
+
+a:hover {
+    text-decoration: underline;
+    background: rgb(13, 229, 99);
+}
+
+header .mobile {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 25px;
+    margin-top: 39px;
+    margin-bottom: -25px;
+    margin: 0;
+    padding: 0;
+}
+
+/*Logo formatat*/
+header .logo a {
+    background-image: url("images/Logo3.jpg");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 100px;
+    position: relative;
+    text-indent: -99999999px;
+    top: -43px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////*/
+/*Sectiune*/
+section {
+    background: rgb(231, 225, 226);
+    color: rgb(5, 5, 5);
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    text-decoration: none;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 8000px;
+}
+
+ul {
+    margin-bottom: 100px;
+}
+
+.prima {
+    margin-top: 5px;
+    background-color: rgb(196, 170, 212);
+    padding: 20px;
+}
+
+li {
+    list-style-type: none;
+    margin: 20px 20px 20px 20px;
+}
+
+p {
+    margin-top: 50px;
+}
+
+.douagrafuri {
+    margin-top: 40px;
+    display: flex;
+}
+
+.poza2 {
+    width: 500px;
+}
+
+.teoreme {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.pozaneagra {
+    height: 220px;
+    margin-left: 300px;
+}
+
+.douagrafuridemaijos {
+    display: inline-flex;
+    margin-left: 95px;
+    margin-top: 40px;
+}
+
+.probcpp {
+    display: flex;
+}
+
+.adoua {
+    margin-left: -220px;
+    margin-top: 60px;
+}
+
+.pozadoe {
+    margin-left: -10px;
+}
+
+.pozadoe1 {
+    margin-left: 50px;
+}
+
+.exemple {
+    margin-left: -70px;
+    margin-top: -45px;
+}
+
+a {
+    color: rgb(11, 126, 228);
+}
+
+.grafuriorientate {
+
+    text-align: left;
+    margin-top: 100px;
+}
+
+.numere {
+    color: red;
+    margin-top: -10px;
+}
+
+.dens1 {
+    color: green;
+    margin-bottom: -40px;
+}
+
+.grafdens {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.oresipoza {
+    display: flex;
+    margin-left: -70px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.pozaore {
+    margin-left: 100px;
+    margin-top: -80px;
+}
+
+.pozaore2 {
+    margin-top: -70px;
+    margin-left: 100px;
+}
+
+.teorema {
+    color: red;
+}
+
+.grafham2 {
+    height: 300px;
+    margin: 20px 0px 90px 0px;
+}
+
+.grafham3 {
+    height: 360px;
+    margin: 20px 0px 50px 0px;
+}
+
+.pozadem {
+    margin-left: -50px;
+}
+
+.dateimp {
+    margin-top: 100px;
+}
+
+.pozabondy {
+    margin-left: -45px;
+}
+
+.butonsf {
+    text-align: center;
+    margin-left: -270px;
+    margin-top: 100px;
+    margin-bottom: -500px;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////*/
+/*Partea cea mai de jos*/
+footer {
+    background: rgb(196, 139, 55);
+    padding: 5px 20px;
+    text-align: center;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+
+footer a {
+    color: rgb(2, 2, 2);
+    text-transform: uppercase;
+
+}
+
+.ultima {
+    margin-top: 20px;
+}
